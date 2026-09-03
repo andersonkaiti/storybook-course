@@ -7,7 +7,9 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "format": "biome check --write",
-    "prepare": "husky"
+    "prepare": "husky",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
@@ -39,7 +41,9 @@
     "husky": "^9.1.7",
     "lint-staged": "^17.4.1",
     "typescript": "~6.0.2",
-    "vite": "^8.2.2"
+    "vite": "^8.2.2",
+    "storybook": "^10.6.0",
+    "@storybook/react-vite": "^10.6.0"
   },
   "lint-staged": {
     "*.{ts,tsx,json}": [
