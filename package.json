@@ -30,6 +30,8 @@
     "@commitlint/cli": "^21.2.2",
     "@commitlint/config-conventional": "^21.2.2",
     "@rolldown/plugin-babel": "^0.2.3",
+    "@storybook/addon-themes": "^10.6.0",
+    "@storybook/react-vite": "^10.6.0",
     "@types/babel__core": "^7.20.5",
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",
@@ -40,10 +42,9 @@
     "globals": "^17.11.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.4.1",
-    "typescript": "~6.0.2",
-    "vite": "^8.2.2",
     "storybook": "^10.6.0",
-    "@storybook/react-vite": "^10.6.0"
+    "typescript": "~6.0.2",
+    "vite": "^8.2.2"
   },
   "lint-staged": {
     "*.{ts,tsx,json}": [
