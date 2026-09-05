@@ -10,6 +10,32 @@ const meta: Meta<typeof Button> = {
   args: {
     children: 'Button',
   },
+  argTypes: {
+    variant: {
+      options: [
+        'default',
+        'destructive',
+        'outline',
+        'secondary',
+        'ghost',
+        'link',
+      ],
+      control: 'select',
+    },
+    size: {
+      options: ['default', 'sm', 'lg', 'icon'],
+      control: {
+        type: 'select',
+        labels: {
+          sm: 'sm (small)',
+          lg: 'lg (large)',
+        },
+      },
+    },
+    disabled: {
+      control: 'boolean',
+    },
+  },
 }
 
 export default meta
