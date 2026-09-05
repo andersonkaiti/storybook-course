@@ -1,5 +1,6 @@
 import { Button } from '@components/ui/button'
 import type { Meta, StoryObj } from '@storybook/react-vite'
+import { fn } from 'storybook/test'
 
 const meta: Meta<typeof Button> = {
   component: Button,
@@ -9,6 +10,7 @@ const meta: Meta<typeof Button> = {
   },
   args: {
     children: 'Button',
+    onClick: fn(),
   },
   argTypes: {
     variant: {
