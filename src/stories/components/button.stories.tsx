@@ -5,6 +5,7 @@ import { fn } from 'storybook/test'
 const meta: Meta<typeof Button> = {
   component: Button,
   title: 'components/button',
+  // tags: ['autodocs'],
   parameters: {
     layout: 'centered',
   },
