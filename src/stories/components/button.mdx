@@ -1,0 +1,67 @@
+import { Canvas, Controls, Meta, Story } from '@storybook/addon-docs/blocks'
+import ButtonMeta, { Outline, Secondary } from './button.stories'
+
+<Meta of={ButtonMeta} />
+
+# Welcome to Button's Documentation
+
+## Variantes
+
+<ul className="space-y-2">
+  <li>default</li>
+  <li>destructive</li>
+  <li>outline</li>
+  <li>secondary</li>
+  <li>ghost</li>
+  <li>link</li>
+</ul>
+
+## Sizes
+
+<ul className="space-y-2">
+  <li>xs</li>
+  <li>sm</li>
+  <li>default</li>
+  <li>lg</li>
+  <li>icon</li>
+  <li>icon-xs</li>
+  <li>icon-sm</li>
+  <li>icon-lg</li>
+</ul>
+
+## Examples
+
+### Secondary
+
+<Canvas of={Secondary} />
+
+### Outline
+
+<Canvas of={Outline} />
+
+Given these props:
+
+<ul>
+  {Object.entries(Outline.args).map(([prop, value]) => (
+    <li key={prop}>
+      {prop}: {value}
+    </li> 
+  ))}
+</ul>
+
+```tsx
+<Button
+  onClick={() => {}}
+  variant="outline"
+>
+  Outline
+</Button>
+```
+
+This will be the result:
+
+<Story of={Outline} />
+
+# API
+
+<Controls />

@@ -5,7 +5,6 @@ import { fn } from 'storybook/test'
 const meta: Meta<typeof Button> = {
   component: Button,
   title: 'components/button',
-  // tags: ['autodocs'],
   parameters: {
     layout: 'centered',
   },
@@ -24,6 +23,17 @@ const meta: Meta<typeof Button> = {
         'link',
       ],
       control: 'select',
+      table: {
+        category: 'Appearance',
+        type: {
+          summary: 'enum',
+          detail:
+            "'default' | 'destructive' | 'outline' | 'secondary' |'ghost' | 'link'",
+        },
+        defaultValue: {
+          summary: 'default',
+        },
+      },
     },
     size: {
       options: ['default', 'sm', 'lg', 'icon'],
@@ -34,9 +44,41 @@ const meta: Meta<typeof Button> = {
           lg: 'lg (large)',
         },
       },
+      table: {
+        category: 'Appearance',
+        type: {
+          summary: 'enum',
+          detail: "'default' | 'sm' | 'lg' | 'icon'",
+        },
+        defaultValue: {
+          summary: 'default',
+        },
+      },
     },
     disabled: {
       control: 'boolean',
+      table: {
+        type: {
+          summary: 'boolean',
+        },
+      },
+    },
+    onClick: {
+      table: {
+        category: 'Event Listeners',
+      },
+    },
+    onMouseEnter: {
+      table: {
+        category: 'Event Listeners',
+        subcategory: 'Mouse events',
+      },
+    },
+    onMouseLeave: {
+      table: {
+        category: 'Event Listeners',
+        subcategory: 'Mouse events',
+      },
     },
   },
 }
